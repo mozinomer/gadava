@@ -4,3 +4,7 @@ body, ol,ul,p,.row,a,label {
 	list-style: none;
 	color: #000;
 }
+
+header {
+	background: blue
+}
