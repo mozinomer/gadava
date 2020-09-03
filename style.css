@@ -1,0 +1,6 @@
+body, ol,ul,p,.row,a,label {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	color: #000;
+}
