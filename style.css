@@ -630,6 +630,7 @@ a#seeallMenu {
   display: flex;
   justify-content: center;
   margin: auto;
+  margin: 20px 0px;
 }
 
 .dot {
@@ -690,4 +691,206 @@ span.strikeThrough {
     max-width: max-content;
     border-radius: 11px;
     margin: 20px 0px 0px;
+}
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+img.specialofferimage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offercontent {
+    position: relative;
+    z-index: 8;
+    height: max-content;
+    padding: 40px 30px;
+}
+
+span.offerpercentage {
+    width: 112px;
+    height: 42px;
+    font-size: 16px;
+    color: #C4091E;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 11px;
+}
+
+.offercontent h2 {
+    font-size: 27px;
+    margin: 20px 0px;
+}
+
+p.pricespecialoffer {
+    font-size: 20px;
+    color: #fff;
+}
+
+a#specialofferId {
+    max-width: 164px;
+    max-height: 44px;
+    background: #009CDC;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border-radius: 10px;
+    margin: 20px 0px 0px;
+}
+button.dot {
+    width: 10px;
+    height: 10px;
+    background: rgb(0 0 0 / 0.3);
+    display: block;
+    margin: 0px 5px; 
+}
+
+button.dot.active {
+    background: #009CDC;
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+button.dot:focus {
+    outline: none;
+}
+.specialOffers {
+    padding: 100px 0px;
+}
+
+.specialOffers .container > h2 {
+    margin-bottom: 50px;
+}
+footer {
+    background: #333333;
+    padding: 50px 0px 0px;
+    color: #ffff;
+}
+
+.copyrights {
+    background: #303030;
+    padding: 20px;
+    margin: 20px 0px 0px;
+}
+footer .logocontainer p {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+    line-height: normal;
+    margin: 20px 0px 0px;
+}
+
+.socialiconscontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.socialiconscontainer i {
+    color: #fff;
+    font-size: 13px;
+}
+
+.socialiconscontainer a {
+    display: block;
+    background: #3D3D3D;
+    border-radius: 50%;
+    /* margin: 0px 10px; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialiconscontainer a:hover {
+    background: #303030;
+}
+
+.searchcontainerfooter form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchcontainerfooter button {
+    height: 43px;
+    width: 48px;
+    background: #0063B0;
+    border: 2px solid #0063B0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.searchcontainerfooter input {
+    height: 43px;
+    background: #3D3D3D;
+    border: 1px solid #ffffff2b;
+    padding: 0px 20px;
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.searchcontainerfooter button span {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.searchcontainerfooter button span::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -2px;
+  right: 0;
+  top: -7px;
+  bottom: 0;
+  margin: auto;
+}
+
+.searchcontainerfooter button span::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 0px;
+    left: 8px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    top: 11px;
+}
+
+.searchcontainerfooter {
+    max-width: 80%;
+    margin-left: auto;
 }
