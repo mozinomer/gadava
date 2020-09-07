@@ -120,6 +120,12 @@
 
 	<div class="brands">
 		<div class="container">
+			<h6 class="text-center">
+				Explore Restaurants
+			</h6>
+			<h2 class="text-center">
+				Top Restaurants
+			</h2>
 			<div class="row">
 				<div class="col-md-1">
 				    <span class="carousel__control js-carousel-prev">
@@ -198,55 +204,190 @@
 		</div>
 	</div>
 
+	<div class="menutabs">
+		<div class="container">
+			<h6 class="text-center">
+				Our Menu
+			</h6>
+			<h2 class="text-center">
+				What would you like to eat?
+			</h2>
+			<div class="menutabss">
+				<ul>
+					<li data-catoegry="OYSTERS">
+						OYSTERS
+					</li>
+					<li data-catoegry="Shrimp">
+						Shrimp
+					</li>
+					<li data-catoegry="Salmon">
+						Salmon
+					</li>
+					<li data-catoegry="Tuna">
+						Tuna
+					</li>
+					<li data-catoegry="Alaskan Pollock">
+						Alaskan Pollock
+					</li>
+				</ul>
+			</div>
+			<div class="menuProducts">
+				<div class="productscontainer OYSTERS">
+					<ul>
+						<li class="productInner">
+							<img src="./images/banner.png">
+							<div class="productdata">
+								<h5>
+									Fried Shrimp Basket
+								</h5>
+								<div class="proceandcart">
+									<p class="price">
+										$20.00
+									</p>
+									<a href="#" id="addtocartFromProducts">
+										+
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="productInner">
+							<img src="./images/banner.png">
+							<div class="productdata">
+								<h5>
+									Fried Shrimp Basket
+								</h5>
+								<div class="proceandcart">
+									<p class="price">
+										$20.00
+									</p>
+									<a href="#" id="addtocartFromProducts">
+										+
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="productInner">
+							<img src="./images/banner.png">
+							<div class="productdata">
+								<h5>
+									Fried Shrimp Basket
+								</h5>
+								<div class="proceandcart">
+									<p class="price">
+										$20.00
+									</p>
+									<a href="#" id="addtocartFromProducts">
+										+
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="productInner">
+							<img src="./images/banner.png">
+							<div class="productdata">
+								<h5>
+									Fried Shrimp Basket
+								</h5>
+								<div class="proceandcart">
+									<p class="price">
+										$20.00
+									</p>
+									<a href="#" id="addtocartFromProducts">
+										+
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="productInner">
+							<img src="./images/banner.png">
+							<div class="productdata">
+								<h5>
+									Fried Shrimp Basket
+								</h5>
+								<div class="proceandcart">
+									<p class="price">
+										$20.00
+									</p>
+									<a href="#" id="addtocartFromProducts">
+										+
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="productInner">
+							<img src="./images/banner.png">
+							<div class="productdata">
+								<h5>
+									Fried Shrimp Basket
+								</h5>
+								<div class="proceandcart">
+									<p class="price">
+										$20.00
+									</p>
+									<a href="#" id="addtocartFromProducts">
+										+
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<a href="#" id="seeallMenu">
+						See Full Menu
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 <script type="text/javascript">
-	
-// brands slider
-(function() {
-  var carousels = document.querySelectorAll('.js-product-carousel');
-  
-  [].forEach.call(carousels, function(carousel) {
-    carouselize(carousel);
-  });
-  
-})();
+		
+	// brands slider
+	(function() {
+	  var carousels = document.querySelectorAll('.js-product-carousel');
+	  
+	  [].forEach.call(carousels, function(carousel) {
+	    carouselize(carousel);
+	  });
+	  
+	})();
 
-function carouselize(carousel) {
-  var productList = carousel.querySelector('.js-product-list');
-  var productListWidth = 0;
-  var productListSteps = 0;
-  var products = carousel.querySelectorAll('.product');
-  var productAmount = 0;
-  var productAmountVisible = 7;
-  var carouselPrev = document.querySelector('.js-carousel-prev');
-  var carouselNext = document.querySelector('.js-carousel-next');
+	function carouselize(carousel) {
+	  var productList = carousel.querySelector('.js-product-list');
+	  var productListWidth = 0;
+	  var productListSteps = 0;
+	  var products = carousel.querySelectorAll('.product');
+	  var productAmount = 0;
+	  var productAmountVisible = 7;
+	  var carouselPrev = document.querySelector('.js-carousel-prev');
+	  var carouselNext = document.querySelector('.js-carousel-next');
 
-  //Count all the products
-  [].forEach.call(products, function(product) {
-    productAmount++;
-    productListWidth += 250;
-    productList.style.width = productListWidth+"px";
-  });
+	  //Count all the products
+	  [].forEach.call(products, function(product) {
+	    productAmount++;
+	    productListWidth += 250;
+	    productList.style.width = productListWidth+"px";
+	  });
 
-  carouselNext.onclick = function() {
-    if(productListSteps < productAmount-productAmountVisible) {
-      productListSteps++;
-      moveProductList();
-    }
-  }
-  carouselPrev.onclick = function() {
-    if(productListSteps > 0) {
-      productListSteps--;
-      moveProductList();
-    }
-  }
-  
-  // This is a bit hacky, let me know if you find a better way to do this!
-  // Move the carousels product-list
-  function moveProductList() {
-    productList.style.transform = "translateX(-"+205*productListSteps+"px)";
-  }
-}
+	  carouselNext.onclick = function() {
+	    if(productListSteps < productAmount-productAmountVisible) {
+	      productListSteps++;
+	      moveProductList();
+	    }
+	  }
+	  carouselPrev.onclick = function() {
+	    if(productListSteps > 0) {
+	      productListSteps--;
+	      moveProductList();
+	    }
+	  }
+	  
+	  // This is a bit hacky, let me know if you find a better way to do this!
+	  // Move the carousels product-list
+	  function moveProductList() {
+	    productList.style.transform = "translateX(-"+205*productListSteps+"px)";
+	  }
+	}
 </script>
 </html>
 

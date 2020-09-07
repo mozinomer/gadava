@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
     function moveLeft() {
         $('#slider ul').animate({
             left: + slideWidth
-        }, 200, function () {
+        }, 600, function () {
             $('#slider ul li:last-child').prependTo('#slider ul');
             $('#slider ul').css('left', '');
         });
@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
     function moveRight() {
         $('#slider ul').animate({
             left: - slideWidth
-        }, 200, function () {
+        }, 500, function () {
             $('#slider ul li:first-child').appendTo('#slider ul');
             $('#slider ul').css('left', '');
         });
