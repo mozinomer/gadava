@@ -951,7 +951,6 @@ div#aboutsection h6 {
 
 div#aboutsection, div#aboutsection p {
     padding: 0px;
-    color: #fff;
 }
 
 div#aboutsection p {
@@ -964,14 +963,6 @@ div#aboutsection > a {
     font-size: 14px;
 }
 
-.aboutussectionhoempage .col-md-6:last-child {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    padding: 0px;
-    z-index: -1;
-}
 
 .aboutussectionhoempage {
     position: relative;
@@ -987,25 +978,13 @@ div#aboutsection {
     width: 195px;
 }
 
-.brands .col-md-1 {
-    position: absolute;
-    bottom: 0px;
-    left: auto;
-    right: auto;
-}
-
 .brands {
     position: relative;
 }
-
-.brands .col-md-1:last-child {
-    left: 20%;
+.brands .carousel__control.js-carousel-prev {
+    position: relative;
+    margin: 0px auto 20px;
 }
-
-.brands .col-md-1:first-child {
-    right: 20%;
-}
-
 ul.product-list.js-product-list {
     height: max-content !important;
 }
@@ -1116,5 +1095,21 @@ a#specialofferId {
 
 #slider ul li {
     background-size: 100% 100% !important;
+}
+.menutabss ul li:nth-child(-n+4) {
+    display: block;
+    max-width: max-content;
+    width: auto;
+    flex: auto;
+    margin: 0px;
+    font-size: 13px;
+}
+
+.menutabss ul li {
+    display: none;
+}
+
+.menutabss ul {
+    justify-content: space-between;
 }
 }
