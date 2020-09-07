@@ -1046,7 +1046,9 @@ a#addtocartFromProducts {
     width: 100%;
     display: flex;
 }
-
+.menutabss ul li:hover {
+	opacity: 1
+}
 .menutabss ul li {
     max-width: 400px;
     width: 200px;
