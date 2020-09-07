@@ -1,26 +1,18 @@
 jQuery(document).ready(function ($) {
-
-// autoplay slider
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
-// autoplay slider
-
-
-  
+  // autoplay slider
+    $('#checkbox').change(function(){
+      setInterval(function () {
+          moveRight();
+      }, 3000);
+    });
+  // autoplay slider
 	var slideCount = $('#slider ul li').length;
 	var slideWidth = $('#slider ul li').width();
 	var slideHeight = $('#slider ul li').height();
 	var sliderUlWidth = slideCount * slideWidth;
-	
 	$('#slider').css({ width: slideWidth, height: slideHeight });
-	
 	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
     $('#slider ul li:last-child').prependTo('#slider ul');
-
     function moveLeft() {
         $('#slider ul').animate({
             left: + slideWidth
@@ -29,7 +21,6 @@ jQuery(document).ready(function ($) {
             $('#slider ul').css('left', '');
         });
     };
-
     function moveRight() {
         $('#slider ul').animate({
             left: - slideWidth
@@ -38,13 +29,10 @@ jQuery(document).ready(function ($) {
             $('#slider ul').css('left', '');
         });
     };
-
     $('a.control_prev').click(function () {
         moveLeft();
     });
-
     $('a.control_next').click(function () {
         moveRight();
     });
-
 });    

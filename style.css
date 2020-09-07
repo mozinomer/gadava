@@ -259,3 +259,242 @@ a.control_next::after {
 	border-top: 0;
 	border-right: 0;
 }
+.aboutussectionhoempage .row {
+    align-items: center;
+}
+
+.aboutussectionhoempage img {
+    width: 100%;
+    height: 100%;
+    min-height: 497px;
+    object-fit: cover;
+}
+
+.aboutussectionhoempage {
+    padding: 100px 0px;
+}
+
+div#aboutsection {
+    padding-right: 100px;
+}
+
+div#aboutsection h6 {
+    font-size: 18px;
+}
+
+div#aboutsection h2 {max-width: 317px;margin-bottom: 20px;}
+
+div#aboutsection p {
+    max-width: 531px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+div#aboutsection > a {
+    border: 2px solid #0D63B0;
+    background: #0D63B0;
+    color: #fff;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 45%;
+    margin: 40px 0px;
+}
+
+.brands .carousel {
+  margin: 20px;
+}
+.brands .carousel__view {
+  /*width: calc((200px*4) + 22px);*/
+  width: 100%;
+  height: 300px;
+  background: white;
+  box-shadow: 0 1px 8px #888888;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.brands .carousel__control {
+  position: absolute;
+  z-index: 1;
+  height: 300px;
+  width: 70px;
+  background-color: rgba(221, 221, 221, 0.5);
+  transition: background-color .3s;
+  display: table;
+}
+.brands .carousel__control .icon {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.brands .carousel__control:hover {
+  background-color: rgba(221, 221, 221, 0.8);
+}
+.brands .carousel__control:first-of-type {
+  left: 0;
+}
+.brands .carousel__control:last-of-type {
+  right: 0;
+}
+
+.brands .product-list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transition: transform .3s;
+  transform: translateX(0px);
+  list-style: none;
+  height: 300px;
+}
+
+.brands .product {
+    display: flex;
+    align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.brands .product span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.brands .carousel {
+    width: 100%;
+    margin: 0px;
+}
+
+.brands .product-list__item {
+    width: 215px;
+    height: 175px;
+    display: inline-block;
+}
+
+.brands .product-list {
+    display: flex;
+    align-items: center;
+}
+
+/*.brands .product-list__item:nth-child(even) {
+    margin: 0px 20px;
+}*/
+
+.brands .carousel__view {
+    box-shadow: none;
+    position: relative;
+}
+
+
+.brands .carousel__control:last-of-type {
+    position: absolute;
+    padding: 0px;
+    height: max-content;
+    width: max-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    max-height: max-content;
+    background: #FBF9F2;
+    width: 82px;
+    height: 31px;
+    border-radius: 40px;
+    font-size: 0;
+    display: flex;
+    cursor: pointer;
+    right: - 100px;
+}
+
+.brands .carousel__control:last-of-type::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.brands .carousel__control:last-of-type::before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 11px;
+	border: 1px solid #000;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: -8px;
+	margin: auto;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+.brands .carousel__control.js-carousel-prev {
+    position: absolute;
+    padding: 0px;
+    height: max-content;
+    width: max-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    max-height: max-content;
+    background: #FBF9F2;
+    width: 82px;
+    height: 31px;
+    border-radius: 40px;
+    font-size: 0;
+    cursor: pointer;
+    transform: rotate(-180deg);
+    display: flex;
+}
+
+.brands .carousel__control.js-carousel-prev::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.brands .carousel__control.js-carousel-prev::before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 11px;
+	border: 1px solid #000;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: -8px;
+	margin: auto;
+	border-left: 0;
+	border-bottom: 0;
+}
+.brands .container {
+	max-width: 1340px;
+}
+div#slider {
+    max-width: 100%;
+}
