@@ -894,6 +894,17 @@ footer .logocontainer p {
     max-width: 80%;
     margin-left: auto;
 }
+.card:hover img {
+    transform: scale(1.5);
+    transition: 1s all;
+}
+
+.card {
+	cursor: pointer;
+}
+.card img {
+    transition: 1s all;
+}
 /*media query*/
 @media only screen and (max-width: 767px) {
 header#header {
