@@ -894,3 +894,227 @@ footer .logocontainer p {
     max-width: 80%;
     margin-left: auto;
 }
+/*media query*/
+@media only screen and (max-width: 767px) {
+header#header {
+    display: none;
+}
+
+div#slider > a {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+div#slider > a.control_next {
+    left: 50%;
+    right: auto;
+}
+
+div#slider > a.control_prev {
+    right: 54%;
+    left: auto;
+}
+
+.slideData h2 {
+    font-size: 22px;
+}
+
+.slideData p {
+    font-size: 13px;
+    line-height: normal;
+}
+
+.sliderButton a {
+    font-size: 13px;
+    padding: 0px;
+    height: 40px !important;
+}
+
+div#slider {
+    height: 400px !important;
+}
+
+.aboutussectionhoempage {
+    padding: 20px 0px;
+}
+
+div#aboutsection h2 {
+    max-width: 100%;
+    font-size: 22px;
+}
+
+div#aboutsection h6 {
+    font-size: 14px;
+}
+
+div#aboutsection, div#aboutsection p {
+    padding: 0px;
+    color: #fff;
+}
+
+div#aboutsection p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+div#aboutsection > a {
+    height: 44px;
+    font-size: 14px;
+}
+
+.aboutussectionhoempage .col-md-6:last-child {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0px;
+    z-index: -1;
+}
+
+.aboutussectionhoempage {
+    position: relative;
+    overflow: hidden;
+    margin: 1px 0px;
+}
+
+div#aboutsection {
+    margin: 20px 0px;
+}
+
+.brands .product-list__item {
+    width: 195px;
+}
+
+.brands .col-md-1 {
+    position: absolute;
+    bottom: 0px;
+    left: auto;
+    right: auto;
+}
+
+.brands {
+    position: relative;
+}
+
+.brands .col-md-1:last-child {
+    left: 20%;
+}
+
+.brands .col-md-1:first-child {
+    right: 20%;
+}
+
+ul.product-list.js-product-list {
+    height: max-content !important;
+}
+
+.brands .carousel__view {
+    height: 220px;
+}
+
+.brands h6 {
+    font-size: 13px;
+    margin: 20px 0px 10px;
+}
+
+.brands h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.brands .product-list__item img {
+    padding: 30px;
+}
+
+.productscontainer ul li {
+    max-width: 45%;
+    margin: 9px;
+    margin-bottom: 40px;
+}
+
+.productdata h5 {
+    font-size: 14px;
+}
+
+a#addtocartFromProducts {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.productdata .price {
+    font-size: 20px;
+}
+
+.productscontainer ul li img {
+    height: 140px;
+}
+
+.menutabss ul {
+    width: 100%;
+    display: flex;
+}
+
+.menutabss ul li {
+    max-width: 400px;
+    width: 200px;
+    flex: 0 20%;
+}
+
+.feautretab {
+    background-size: 200% 100%;
+    background-position: center;
+    height: 400px;
+    min-height: auto;
+}
+
+.contentfeatureproduct h6 {
+    font-size: 14px;
+}
+
+.contentfeatureproduct h2 {
+    max-width: 100%;
+    font-size: 32px;
+}
+
+.contentfeatureproduct > a {
+    font-size: 13px;
+}
+
+.specialOffers {padding: 20px 0px;}
+
+.specialOffers .container > h2 {
+    font-size: 27px;
+}
+
+.card {
+    height: 400px;
+}
+
+span.offerpercentage {
+    font-size: 11px;
+}
+
+.offercontent h2 {
+    font-size: 22px;
+}
+
+a#specialofferId {
+    font-size: 12px;
+}
+
+.socialiconscontainer {
+    max-width: 100%;
+    margin: 40px 0px 30px;
+}
+
+.searchcontainerfooter {
+    max-width: 100%;
+}
+
+#slider ul li {
+    background-size: 100% 100% !important;
+}
+}
